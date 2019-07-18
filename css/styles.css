@@ -81,10 +81,10 @@ main {
   }
 
   .scroll {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
-    right: 50%;
-    transform: translate(50%);
+    left: 50%;
+    transform: translatex(-50%);
   }
 
   .circle {
@@ -96,7 +96,7 @@ main {
     height: 300px;
     width: 300px;
     background: rgba(247, 136, 167, 0.6);
-    right: 150px;
+    right: 170px;
     bottom: 300px;
   }
 
@@ -106,13 +106,14 @@ main {
     background: rgba(247, 193, 162, 0.7);
     right: 75px;
     top: 305px;
+    z-index: 1;
   }
 
   .purple {
     height: 150px;
     width: 150px;
     background: rgba(207, 130, 213, 0.6);
-    right: 45px;
+    right: 65px;
     bottom: 400px;
   }
 }
