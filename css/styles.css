@@ -3,15 +3,19 @@ body {
   font-family: "Open Sans";
 }
 
-nav {
+header {
   display: flex;
+  flex-direction: column;
+}
+
+nav {
   flex-direction: column;
   padding-left: 15px;
 }
 
-h3 {
+h2 {
   margin: 0px;
-  padding-top: 30px;
+  padding: 20px 0;
 }
 
 a {
@@ -36,9 +40,14 @@ main {
 
 /* Class styles */
 
+.chirpus {
+  padding-left: 15px;
+}
+
 .content {
-  border-left: 2px solid #000;
-  padding: 0 8px;
+  margin: 0;
+  border-left: 2px solid black;
+  padding: 0 15px;
 }
 
 .button {
@@ -48,12 +57,22 @@ main {
   border-radius: 17px;
   height: 35px;
   width: 95%;
+  margin-top: 10px;
+}
+
+.scroll {
+  margin-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
-  nav {
+  header {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: row;
   }
 
   ul {
@@ -62,13 +81,13 @@ main {
   }
 
   li {
-    padding: 7px;
+    padding: 7px 0 7px 13px;
   }
 
-  main {
-    width: 50%;
-    padding: 15px;
+  .left,
+  .right {
     margin-top: 35px;
+    width: 50%;
   }
 
   .button {
@@ -77,7 +96,7 @@ main {
   }
 
   .hire {
-    margin-right: 30px;
+    margin-top: 0;
   }
 
   .scroll {
@@ -96,16 +115,16 @@ main {
     height: 300px;
     width: 300px;
     background: rgba(247, 136, 167, 0.6);
-    right: 170px;
-    bottom: 300px;
+    right: 100px;
+    top: 0px;
   }
 
   .orange {
     height: 200px;
     width: 200px;
     background: rgba(247, 193, 162, 0.7);
-    right: 75px;
-    top: 305px;
+    right: 25px;
+    top: 170px;
     z-index: 1;
   }
 
@@ -113,7 +132,11 @@ main {
     height: 150px;
     width: 150px;
     background: rgba(207, 130, 213, 0.6);
-    right: 65px;
-    bottom: 400px;
+    right: 0;
+    top: 75px;
+  }
+
+  .right {
+    position: relative;
   }
 }
