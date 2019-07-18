@@ -87,32 +87,31 @@ main {
     transform: translate(50%);
   }
 
-  .big-circle {
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .pink {
     height: 300px;
     width: 300px;
     background: rgba(247, 136, 167, 0.6);
-    border-radius: 50%;
-    position: absolute;
     right: 150px;
     bottom: 300px;
   }
 
-  .med-circle {
+  .orange {
     height: 200px;
     width: 200px;
     background: rgba(247, 193, 162, 0.7);
-    border-radius: 50%;
-    position: absolute;
     right: 75px;
     top: 305px;
   }
 
-  .sm-circle {
+  .purple {
     height: 150px;
     width: 150px;
     background: rgba(207, 130, 213, 0.6);
-    border-radius: 50%;
-    position: absolute;
     right: 45px;
     bottom: 400px;
   }
